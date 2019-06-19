@@ -4,9 +4,11 @@ In this problem we are using 24-hour time. That is, the first second of each day
 
 You are visiting an online forum. Whenever there is a post that has been made strictly less than 24 hours ago, the forum displays a human-readable message stating when it was made. There are three types of messages:
 
-"few seconds ago", which means the post is made between 0 and 59 seconds ago, inclusive.
-"X minutes ago", where X is an integer between 1 and 59, inclusive, which means the post is made between X minutes and X minutes 59 seconds ago, inclusive.
-"X hours ago", where X is an integer between 1 and 23, inclusive, which means the post is made between X hours and X hours 59 minutes 59 seconds ago, inclusive.
+* `few seconds ago`, which means the post is made between 0 and 59 seconds ago, inclusive.
+
+* `X minutes ago`, where X is an integer between 1 and 59, inclusive, which means the post is made between X minutes and X minutes 59 seconds ago, inclusive.
+
+* `X hours ago`, where X is an integer between 1 and 23, inclusive, which means the post is made between X hours and X hours 59 minutes 59 seconds ago, inclusive.
 
 You are given the string[]s exactPostTime and showPostTime, both with the same number of elements. For each valid index i you know the following information:
 
