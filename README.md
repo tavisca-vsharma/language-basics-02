@@ -24,9 +24,13 @@ Return the answer in the format "HH:MM:SS". If there are multiple solutions, ret
 ## Definition
 
 **Class**:	`ForumPostEasy`
+
 **Method**:	`GetCurrentTime`
+
 **Parameters**:	`string[], string[]``
+
 **Returns**:	`string`
+
 **Method signature**:	`string GetCurrentTime(string[] exactPostTime, string[] showPostTime)`
 (be sure your method is public)
 
@@ -44,27 +48,39 @@ Return the answer in the format "HH:MM:SS". If there are multiple solutions, ret
 **1**
 
 {"12:12:12"}
+
 {"few seconds ago"}
+
 Returns: "12:12:12"
+
 The current time is somewhere between 12:12:12 and 12:13:11, inclusive. The returned time is the lexicographically smallest one out of all these times.
 
 **2**
 
 {"23:23:23","23:23:23"}
+
 {"59 minutes ago","59 minutes ago"}
+
 Returns: "00:22:23"
+
 Both posts were made on the previous day. The current time is a bit after midnight.
 
 **3**		
 
 {"00:10:10","00:10:10"}
+
 {"59 minutes ago","1 hours ago"}
+
 Returns: "impossible"
+
 Two posts made in the same second cannot have two different human-readable strings.
 
 **4**		
 
 {"11:59:13","11:13:23","12:25:15"}
+
 {"few seconds ago","46 minutes ago","23 hours ago"}
+
 Returns: "11:59:23"
+
 The post made at 12:25:15 was posted yesterday at that time of day.
